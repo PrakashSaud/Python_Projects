@@ -24,5 +24,5 @@ A Python script that monitors stock price changes using **Alpha Vantage API**, f
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/stock-news-alert.git
+   git clone https://github.com/PrakashSaud/stock-news-alert.git
    cd stock-news-alert
