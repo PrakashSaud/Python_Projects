@@ -12,6 +12,9 @@ A Python script that monitors stock price changes using the **Alpha Vantage API*
 A practical project combining **data APIs, automation, and notifications**.  
 
 ---
+### [PayScale Salary Analysis](./payscale-salary-analysis) – 
+A mini-project analyzing starting vs. mid-career salaries, low-risk vs. high-potential majors, and degree group comparisons.
+---
 
 ## 🚀 How to Use  
 1. Navigate into any project folder.  
