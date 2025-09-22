@@ -68,4 +68,4 @@ The dataset used is `salaries_by_college_major.csv` from PayScale, containing:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/PayScale-Salary-Analysis.git
+git clone https://github.com/prakashsaud/PayScale-Salary-Analysis.git
