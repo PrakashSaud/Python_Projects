@@ -1,27 +1,77 @@
-📊 Programming Language Popularity Analysis
+# Stack Overflow Programming Language Popularity Analysis
 
-This project explores the popularity of different programming languages over time using Stack Overflow data. Each post on Stack Overflow comes with tags, and many of these tags represent programming languages. By analyzing the number of posts tagged with each language, we can uncover which languages are the most widely discussed and how their popularity has changed over the years.
+## Project Overview
+This project analyzes the popularity of different programming languages over time using **Stack Overflow post data**. Each post on Stack Overflow is tagged with a programming language, allowing us to measure trends and see which languages gained or lost popularity across different periods.
 
-⸻
+The analysis includes:
+- Data cleaning and timestamp handling
+- Pivoting data for time-series analysis
+- Data visualization with Matplotlib
+- Smoothing time-series data to reveal trends
+- Comparative analysis for different time periods (2008–2012, 2015–2018, 2018–2021, 2021–Ongoing)
+- Year-specific insights (e.g., 2020 trends)
 
-🚀 Project Overview
-	•	The oldest programming language still in use is FORTRAN (1957), but many languages have been developed since then.
-	•	Which one is the most popular today?
-	•	To answer this, we use Stack Overflow posts with programming language tags and count them over time.
-	•	The language with the most posts is considered the most “popular” (or at least the most talked about).
+---
 
-This project demonstrates:
-	•	📈 Visualizing data and creating charts with Matplotlib
-	•	🧮 Pivoting, grouping, and manipulating data with Pandas
-	•	⏱️ Working with timestamps and time-series data
-	•	🎨 Styling and customizing line charts
+## Data Description
+- **Source:** Stack Overflow QueryResults.csv
+- **Columns:**
+  - `DATE`: The month of the data record
+  - `TAG`: Programming language tag
+  - `POSTS`: Number of posts for the given tag in that month
 
-⸻
+---
 
-📂 Dataset
+## Project Steps
 
-The dataset comes from Stack Overflow queries and is included as QueryResults.csv.
-It contains:
-	•	DATE → Timestamp of the post (monthly aggregation)
-	•	TAG → Programming language tag
-	•	POSTS → Number of posts with that tag in that month
+### 1. Preliminary Data Exploration
+- Read CSV into a Pandas DataFrame
+- Checked shape, first & last rows, and column counts
+- Understood the data and column types
+
+### 2. Data Cleaning
+- Converted `DATE` from string to `datetime` objects
+- Ensured proper handling of missing or NaN values
+
+### 3. Data Manipulation
+- Pivoted DataFrame to have **dates as rows** and **programming languages as columns**
+- Filled missing values with 0 for proper analysis
+- Counted posts per language
+
+### 4. Data Visualization
+- Plotted line charts to show popularity trends over time
+- Created multi-line charts for all programming languages
+- Added styling: figure size, tick font, axis labels, legends
+- Applied **rolling mean (window=6)** to smooth trends
+
+### 5. Comparative Analysis
+- Analyzed popularity over specific periods:
+  - 2008–2012
+  - 2015–2018
+  - 2018–2021
+  - 2021–Ongoing
+- Identified top 3 languages for each period and visualized using bar charts
+- Analyzed **year 2020** separately for detailed trends
+
+---
+
+## Key Findings
+- Python consistently emerged as the most popular language over time
+- Java, JavaScript, and C# remained strong in early years
+- Rolling mean helps visualize trends clearly by smoothing noisy data
+- Popularity trends shift across periods, showing growth or decline of languages
+
+---
+
+## Technologies Used
+- Python 3.x
+- Pandas for data manipulation
+- Matplotlib for visualization
+- Jupyter Notebook for analysis workflow
+
+---
+
+## How to Run
+1. Clone the repository:
+```bash
+git clone https://github.com/PrakashSaud/Python_Projects.git
