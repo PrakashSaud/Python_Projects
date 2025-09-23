@@ -16,6 +16,19 @@ A practical project combining **data APIs, automation, and notifications**.
 A mini-project analyzing starting vs. mid-career salaries, low-risk vs. high-potential majors, and degree group comparisons.
 ---
 
+---
+
+# **Short Description for Parent README.md**
+
+```markdown
+Analyzed Stack Overflow post data to track the popularity of programming languages over time. Includes data cleaning, pivoting, time-series visualizations, rolling mean smoothing, and period-specific comparative analysis using Python, Pandas, and Matplotlib.
+---
+
+
+```markdown
+Analyzed Stack Overflow post data to track the popularity of programming languages over time. Includes data cleaning, pivoting, time-series visualizations, rolling mean smoothing, and period-specific comparative analysis using Python, Pandas, and Matplotlib.
+---
+
 ## 🚀 How to Use  
 1. Navigate into any project folder.  
 2. Open its `README.md` file for setup instructions.  
